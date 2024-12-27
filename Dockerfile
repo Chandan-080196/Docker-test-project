@@ -2,4 +2,5 @@ FROM ubuntu:latest
 WORKDIR /app
 COPY script.sh /app/script.sh
 RUN chmod +x /app/script.sh
-CMD ["./script.sh"]
+ENTRYPOINT ./
+CMD ["script.sh"]
